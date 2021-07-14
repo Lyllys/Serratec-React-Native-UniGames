@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, SafeAreaView, Image } from "react-native";
-import styles from './styles'
-import InputText from "../../Componentes/TextInput";
+import styles from './styles';
+import InputText from '../../Components/TextInput';
 import { LinearGradient } from "expo-linear-gradient";
 
 
@@ -18,6 +18,7 @@ const Login = () => {
         <Image source={require('../../imagens/logo.png')} style={styles.img} />
       <InputText texto='email' nome="at" />
       <InputText texto='senha' nome='lock' />
+    
      
     
     </View>

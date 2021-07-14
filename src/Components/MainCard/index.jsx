@@ -6,7 +6,7 @@ import styles from './styles.js';
 const MainCard = (props) => {
     return (
         <View style={styles.card}>
-            <Image source={require(props.img)} resizeMode="cover" style={styles.image} />
+            {/* <Image source={require(props.img)} resizeMode="cover" style={styles.image} /> */}
             <View style={styles.cardBody}>
                 <Text style={styles.title}>{props.title}</Text>
                 <Text style={styles.text}>{props.desc}</Text>

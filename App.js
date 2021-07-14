@@ -9,6 +9,7 @@ import TapBar from './src/Components/TapBar';
 import shopTitans from './assets/shoptitans.jpg';
 import stardewValley from './assets/stardew.png';
 import warframe from './assets/warframe.jpg';
+import Login from './src/Screens/Login';
 
 
 export default function App() {
@@ -52,7 +53,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <View>
+     <View>
         <FlatList
           horizontal
           initialScrollIndex={1}
@@ -60,7 +61,7 @@ export default function App() {
           renderItem={renderSmallCard}
           keyExtractor={item => String(item.id)} />
       </View>
-      <TapBar />
+      <TapBar /> 
       <StatusBar style="auto" />
     </View>
 
