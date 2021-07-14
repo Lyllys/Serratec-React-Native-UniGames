@@ -1,5 +1,6 @@
-import { StatusBar } from 'expo-status-bar';
+import { StatusBar } from 'react-native';
 import React from 'react';
+
 import { SafeAreaView, FlatList, ScrollView, StyleSheet, Text, View } from 'react-native';
 import MainCard from './src/Components/MainCard';
 import SmallCard from './src/Components/SmallCard';
@@ -8,6 +9,7 @@ import TapBar from './src/Components/TapBar';
 import shopTitans from './assets/shoptitans.jpg';
 import stardewValley from './assets/stardew.png';
 import warframe from './assets/warframe.jpg';
+
 
 export default function App() {
 
@@ -61,8 +63,10 @@ export default function App() {
       <TapBar />
       <StatusBar style="auto" />
     </View>
+
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {
