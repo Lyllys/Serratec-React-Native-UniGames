@@ -5,10 +5,11 @@ const styles = StyleSheet.create({
     container: {
         width: windowWidth /1.25,
         height: windowHeight /16,
-        backgroundColor: '#fff',
         justifyContent: "center",
         alignItems: "center"
-    }
+    },
+  
+
 })
 
 export default styles; 
