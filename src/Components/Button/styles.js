@@ -6,8 +6,17 @@ const styles = StyleSheet.create({
         width: windowWidth /1.25,
         height: windowHeight /16,
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+        backgroundColor: 'purple',
+        borderRadius: 8,
+        marginTop: 10
+        
     },
+
+    texto: {
+        color: '#fff',
+        fontSize: 20
+    }
   
 
 })

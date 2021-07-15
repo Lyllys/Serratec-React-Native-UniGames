@@ -5,7 +5,8 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         position: 'relative',
-        padding: 10
+        padding: 10,
+        justifyContent: "flex-end"
     },
     
     inputText: {

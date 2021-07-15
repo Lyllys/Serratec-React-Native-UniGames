@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         width: windowWidth / 1.2,
-        backgroundColor: 'red'
+        backgroundColor: 'grey'
     },
     gradient: {
         borderRadius: 30,

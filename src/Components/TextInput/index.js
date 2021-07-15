@@ -1,16 +1,21 @@
 import React from "react";
-import { TextInput, View, Text } from "react-native";
+import { TextInput, View, Text, KeyboardAvoidingView } from "react-native";
 import styles from './styles';
 import { FontAwesome5 } from '@expo/vector-icons'
 
 
-const InputText = ({ texto , nome}) => {
+const InputText = ({ texto , nome , tipo, valor}) => {
     return (
         <View style={styles.container}>
-           
-            <TextInput
+            
+           <TextInput
                 placeholder={texto}
                 style={styles.inputText}
+                keyboardType={tipo}
+                onChangeText={valor}
+                
+
+
             />
              <FontAwesome5
                 name={nome}
@@ -18,10 +23,10 @@ const InputText = ({ texto , nome}) => {
                 style={styles.icone}
 
             />
+         
+            
         </View>
-
-
-
+       
     )
 };
 
