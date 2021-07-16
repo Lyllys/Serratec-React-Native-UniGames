@@ -6,14 +6,9 @@ import { useNavigation } from "@react-navigation/native";
 import AvatarPerfil from "../AvatarPerfil";
 
 
-const Header = () => {
+const Header = ({aoClicar}) => {
 
-    const navigation = useNavigation();
-    
-    function editarConta() {
-        navigation.navigate('EditarConta')
-    }
-
+   
     return (
         <View style={styles.container}>
             <View style={styles.perfil}>
@@ -27,8 +22,8 @@ const Header = () => {
 
             </View>
            
-            <TouchableOpacity  style={styles.icone} activeOpacity={0.7} onPress={editarConta}>
-            <FontAwesome name='edit' color='grey' size={20}  />
+            <TouchableOpacity  style={styles.icone} activeOpacity={0.7} onPress={aoClicar}>
+            <FontAwesome name='sign-out' color='grey' size={20}  />
             </TouchableOpacity>
         </View>
 

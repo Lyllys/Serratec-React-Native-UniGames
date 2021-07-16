@@ -6,6 +6,7 @@ import Home from '../../Screens/Home';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import Cadastro from '../../Screens/Cadastro';
 import EditarConta from '../../Screens/EditarConta/EditarConta';
+import DetalheJogo from '../../Screens/DetalheJogo'
 
 
 const { Navigator, Screen } = createStackNavigator();
@@ -32,12 +33,12 @@ const HomeTabs = () => {
                     tabBarLabel: 'Início',
                     tabBarIcon: () => (<Icon name="compass" size={20} color={'#fff'} />)
                 }} />
-            <Tab.Screen name='Editar conta' component={EditarConta} options={{
-                tabBarLabel: 'Em breve',
+            <Tab.Screen name='Favoritos' component={Home} options={{
+                tabBarLabel: 'Favoritos',
                 tabBarIcon: () => (<Icon name="star" size={20} color={'#fff'} />)
             }} />
-            <Tab.Screen name='Downloads' component={Home} options={{
-                tabBarLabel: 'Downloads',
+            <Tab.Screen name='Editar Perfil' component={EditarConta} options={{
+                tabBarLabel: 'Editar Perfil',
                 tabBarIcon: () => (<Icon name="user" size={20} color={'#fff'} />)
             }} />
         </Tab.Navigator>
@@ -59,7 +60,8 @@ const RotaAutenticacao = () => {
                  
                 <Screen name='Login' component={Login} />
                  <Screen name='Cadastro' component={Cadastro} />
-                 <Screen name='EditarConta' component={EditarConta} />  
+                 <Screen name='EditarConta' component={EditarConta} /> 
+                 <Screen name='DetalheJogo' component={DetalheJogo} />   
                 <Screen name='Home' component={HomeTabs} />
             </Navigator>
      

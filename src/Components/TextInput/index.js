@@ -4,7 +4,7 @@ import styles from './styles';
 import { FontAwesome5 } from '@expo/vector-icons'
 
 
-const InputText = ({ texto , nome , tipo, valor}) => {
+const InputText = ({ texto , nome , tipo, valor, seguranca}) => {
     return (
         <View style={styles.container}>
             
@@ -13,6 +13,7 @@ const InputText = ({ texto , nome , tipo, valor}) => {
                 style={styles.inputText}
                 keyboardType={tipo}
                 onChangeText={valor}
+                secureTextEntry={seguranca}
                 
 
 

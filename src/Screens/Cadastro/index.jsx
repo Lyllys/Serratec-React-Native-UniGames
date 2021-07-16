@@ -21,7 +21,7 @@ const Cadastro = () => {
 
   const manipuladorPerfil = () => {
 
-    axios.post('http://localhost:8080/usuario', {
+    axios.post('http://192.168.0.104:8080/usuario', {
       nome,
       email,
       senha,
@@ -67,9 +67,9 @@ const Cadastro = () => {
         <Background>
 
           <Image source={require('../../imagens/logo.png')} style={styles.img} />
-          <InputText texto='nome' nome="signature" tipo='email-address' valor={setNome} />
-          <InputText texto='email' nome="at" valor={setEmail} />
-          <InputText texto='senha' nome='lock' secureTextEntry valor={setSenha} />
+          <InputText texto='nome' nome="signature"  valor={setNome} />
+          <InputText texto='email' nome="at" valor={setEmail} tipo='email-address' />
+          <InputText texto='senha' nome='lock' seguranca={true} valor={setSenha} />
           <InputText texto='CPF' nome='id-card' tipo='numeric' valor={setCpf} />
           <InputText texto='data de nascimento (yyyy-mm-dd)' nome='calendar-alt' tipo='numeric' valor={setDataNascimento} />
           {/* <InputText texto='foto do perfil (url)' nome='camera' /> */}

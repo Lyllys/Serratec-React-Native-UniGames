@@ -1,10 +1,11 @@
 import axios from 'axios';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const api = axios.create({
-    baseURL: 'http://localhost:8000/'
+    baseURL: 'http://192.168.0.104:8080/'
 })
 
-http.interceptors.request.use(
+api.interceptors.request.use(
     (config) => {
         const token = AsyncStorage.getItem('token')
         if(token){

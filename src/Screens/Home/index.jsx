@@ -9,10 +9,25 @@ import Header from "../../Components/Header";
 import SearchBar from "../../Components/Search";
 import Background from "../../Components/Background";
 import styles from "./styles";
-import MainCard from '../../Components/MainCard'
+import MainCard from '../../Components/MainCard';
+import { useNavigation } from "@react-navigation/native";
 
 
 const Home = () => {
+  
+  const navigation = useNavigation();
+
+  function manipuladorVisualizar () {
+      navigation.navigate('DetalheJogo', {})
+    }
+
+   
+    
+    function logOut() {
+        navigation.navigate('Login')
+    }
+
+  
 
   const [games, setGames] = useState([]);
 
@@ -48,7 +63,7 @@ const Home = () => {
 
       <View>
         <View >
-          <Header />
+          <Header aoClicar={logOut}/>
         </View>
 
         <View>
@@ -79,6 +94,7 @@ const Home = () => {
                 title={item.title}
                 img={item.thumbnail}
                 desc={item.short_description}
+                // visualizar={() => navigation.navigate('DetalheJogo', {item : 'id'})}
               />} />
         </View>
       </View>
