@@ -11,6 +11,7 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         elevation: 2,
         justifyContent: 'flex-end',
+        marginLeft:15,
         shadowColor: '#000',
         shadowOffset: {
             width: 0,

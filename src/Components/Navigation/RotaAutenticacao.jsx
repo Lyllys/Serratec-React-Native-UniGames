@@ -15,8 +15,13 @@ const HomeTabs = () => {
         <Tab.Navigator initialRouteName='Home'
             tabBarOptions={{
                 activeTintColor: '#fff',
-                style: { backgroundColor: 'purple', height: 50, borderTopColor: 'purple', paddingBottom: 5, borderTopWidth: 1, borderRadius: 30, marginHorizontal: 10, marginBottom: 20 }
-
+                inactiveTintColor: '#1C1C1C',
+                style: { backgroundColor: '#a937d4', height: 50, borderTopColor: '#a937d4', paddingBottom: 5,paddingTop: 4, borderTopWidth: 1, borderRadius: 30, marginHorizontal: 10, marginBottom: 20 },
+                labelStyle: {
+                    fontSize: 15,
+                    margin: 0,
+                    padding: 0,
+                  },
             }}
             sceneContainerStyle={{ backgroundColor: ['#000'] }}
 
@@ -48,8 +53,9 @@ const RotaAutenticacao = () => {
                     }
                 }}
             >
-                <Screen name='Cadastro' component={Cadastro} />
+                 
                 <Screen name='Login' component={Login} />
+                {/* <Screen name='Cadastro' component={Cadastro} /> */}
                 <Screen name='Home' component={HomeTabs} />
             </Navigator>
      

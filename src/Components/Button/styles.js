@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
         height: windowHeight /16,
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: 'purple',
+        backgroundColor: '#a937d4',
         borderRadius: 8,
         marginTop: 10
         
