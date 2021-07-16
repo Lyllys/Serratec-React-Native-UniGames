@@ -9,7 +9,7 @@ Neste repositório será guardado o projeto final do módulo de React Native do 
 <h2>2. Escopo</h2>
     <ul>
       <li> -- OK -- 1: Tela inicial: Login (outras telas: Cadastro e Home);</li>
-      <li> -- (falta a stack -- 2: Contém tipos de navegação, uma Stack Navigation e outra de xxx;</li>
+      <li> -- (falta a stack -- 2: Contém tipos de navegação, uma Stack Navigation e outra de TabNavigation;</li>
       <li>3: Persistência de dados, e;</li>
       <li> -- OK -- 4: Quando on-line, o app realiza requisições HTTP utilizando o Axios.</li>
     </ul>
@@ -30,7 +30,7 @@ Neste repositório será guardado o projeto final do módulo de React Native do 
   <ul>
     <li> -- Página de destaque do jogo</li>
     <li> -- Página de jogar(?)</li>
-    <li> -- Págimna de edição do perfil</li>
+    <li> -- Página de edição do perfil</li>
     <li> -- Fazer a Stack navigation</li>
     <li> -- Salvar imagem de perfil na api</li>
   </ul>
