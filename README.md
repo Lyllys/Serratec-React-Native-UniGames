@@ -1,17 +1,17 @@
 # Serratec-React-Native-UniGames
 Neste repositório será guardado o projeto final do módulo de React Native do Serratec.
 
-<h2>1. Descrição</h2>
+<h2>1. Descrição OK</h2>
    <p>Opção 2: Tema de livre escolha: optamos por implementar um App de Jogos, o UniGames.</p>
    <p>Para tanto, utilizamos uma API livre de jogos online (https://www.freetogame.com/api-doc) e uma API própria, para cadastro de usuários no nosso sistema (https://github.com/LucianaBoher/Serratec-ReactNative-APICadastro).</p>
 
 
 <h2>2. Escopo</h2>
     <ul>
-      <li>1: Tela inicial: Login (outras telas: Cadastro e Home);</li>
-      <li>2: Contém tipos de navegação, uma Stack Navigation e outra de xxx;</li>
+      <li> -- OK -- 1: Tela inicial: Login (outras telas: Cadastro e Home);</li>
+      <li> -- (falta a stack -- 2: Contém tipos de navegação, uma Stack Navigation e outra de xxx;</li>
       <li>3: Persistência de dados, e;</li>
-      <li>4: Quando on-line, o app realiza requisições HTTP utilizando o Axios.</li>
+      <li> -- OK -- 4: Quando on-line, o app realiza requisições HTTP utilizando o Axios.</li>
     </ul>
 
 
@@ -26,4 +26,12 @@ Neste repositório será guardado o projeto final do módulo de React Native do 
       <li>7: Persistência de dados.</li>
     </ul>
 
+<h2>TO DO:</h2>
+  <ul>
+    <li> -- Página de destaque do jogo</li>
+    <li> -- Página de jogar(?)</li>
+    <li> -- Págimna de edição do perfil</li>
+    <li> -- Fazer a Stack navigation</li>
+    <li> -- Salvar imagem de perfil na api</li>
+  </ul>
 

@@ -34,7 +34,7 @@ const Home = () => {
   useEffect(() => {
     const getGamesRelevancia = async () => {
       try {
-        const resposta = await axios.get('https://www.freetogame.com/api/games?category=social')
+        const resposta = await axios.get('https://www.freetogame.com/api/games?category=anime')
         setGamesRelevancia(resposta.data)
       } catch (erro) {
         console.log(erro);
