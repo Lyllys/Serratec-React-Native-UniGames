@@ -8,7 +8,6 @@ import LinearGradient from "expo-linear-gradient";
 import Background from "../../Components/Background";
 
 
-
 const Login = () => {
   const navigation = useNavigation();
 

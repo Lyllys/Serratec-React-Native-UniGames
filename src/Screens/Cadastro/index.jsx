@@ -21,7 +21,7 @@ const Cadastro = () => {
 
   const manipuladorPerfil = () => {
 
-    axios.post('http://192.168.0.104/usuario', {
+    axios.post('http://localhost:8080/usuario', {
       nome,
       email,
       senha,
@@ -35,7 +35,7 @@ const Cadastro = () => {
           [
             {
               text: "OK, obrigado.", onPress: () => {
-                navigation.navigate('Home')
+                navigation.navigate('Login')
                 setNome('')
                 setEmail('')
                 setSenha('')
@@ -48,11 +48,6 @@ const Cadastro = () => {
         );
       }).catch(erro => console.log(erro))
   }
-
-
-
-
-
 
   return (
 
@@ -84,9 +79,6 @@ const Cadastro = () => {
       
         
     </KeyboardAvoidingView>
-
-   
-    
 
   )
 };
