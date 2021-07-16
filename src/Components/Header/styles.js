@@ -5,10 +5,13 @@ const styles = StyleSheet.create({
         marginTop: 55,
         marginBottom: 20,
         marginLeft: 15,
-        flexDirection: "row"
+        marginRight: 15,
+        flexDirection: "row",
+        justifyContent: "space-between"
+       
     },
-    containerTexto:{
-
+    perfil:{
+        flexDirection: "row",
     },
     textoSaudacao: {
         color: '#fff',
@@ -19,6 +22,11 @@ const styles = StyleSheet.create({
         color: '#fff',
         marginLeft: 15,
         fontSize: 20
+    },
+
+    icone: {
+       
+
     }
 
 });

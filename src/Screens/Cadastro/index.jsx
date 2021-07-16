@@ -6,6 +6,7 @@ import InputText from '../../Components/TextInput';
 import { useNavigation } from "@react-navigation/native";
 import axios from 'axios';
 import { useState } from 'react';
+import Background from '../../Components/Background';
 
 
 const Cadastro = () => {
@@ -20,7 +21,7 @@ const Cadastro = () => {
 
   const manipuladorPerfil = () => {
 
-    axios.post('http://localhost:8080/usuario', {
+    axios.post('http://192.168.0.104/usuario', {
       nome,
       email,
       senha,
@@ -55,7 +56,8 @@ const Cadastro = () => {
 
   return (
 
-    <KeyboardAvoidingView style={{ flex: 1 }}
+    
+      <KeyboardAvoidingView style={{ flex: 1 }}
     behavior='padding'
     keyboardVerticalOffset={
     Platform.select({
@@ -65,7 +67,9 @@ const Cadastro = () => {
   }
     >
      
+     
         <View style={styles.container}>
+        <Background>
 
           <Image source={require('../../imagens/logo.png')} style={styles.img} />
           <InputText texto='nome' nome="signature" tipo='email-address' valor={setNome} />
@@ -75,11 +79,14 @@ const Cadastro = () => {
           <InputText texto='data de nascimento (yyyy-mm-dd)' nome='calendar-alt' tipo='numeric' valor={setDataNascimento} />
           {/* <InputText texto='foto do perfil (url)' nome='camera' /> */}
           <Button texto='CADASTRAR' aoLogar={manipuladorPerfil} />
-
+          </Background>
         </View>
       
-
+        
     </KeyboardAvoidingView>
+
+   
+    
 
   )
 };

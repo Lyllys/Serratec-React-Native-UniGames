@@ -5,6 +5,7 @@ import Login from '../../Screens/Login';
 import Home from '../../Screens/Home';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import Cadastro from '../../Screens/Cadastro';
+import EditarConta from '../../Screens/EditarConta/EditarConta';
 
 
 const { Navigator, Screen } = createStackNavigator();
@@ -12,7 +13,7 @@ const Tab = createBottomTabNavigator();
 
 const HomeTabs = () => {
     return (
-        <Tab.Navigator initialRouteName='Home'
+        <Tab.Navigator 
             tabBarOptions={{
                 activeTintColor: '#fff',
                 inactiveTintColor: '#1C1C1C',
@@ -31,7 +32,7 @@ const HomeTabs = () => {
                     tabBarLabel: 'Início',
                     tabBarIcon: () => (<Icon name="compass" size={20} color={'#fff'} />)
                 }} />
-            <Tab.Screen name='Em breve' component={Home} options={{
+            <Tab.Screen name='Editar conta' component={EditarConta} options={{
                 tabBarLabel: 'Em breve',
                 tabBarIcon: () => (<Icon name="star" size={20} color={'#fff'} />)
             }} />
@@ -42,6 +43,8 @@ const HomeTabs = () => {
         </Tab.Navigator>
     )
 }
+
+
 
 const RotaAutenticacao = () => {
     return (
@@ -55,7 +58,8 @@ const RotaAutenticacao = () => {
             >
                  
                 <Screen name='Login' component={Login} />
-                {/* <Screen name='Cadastro' component={Cadastro} /> */}
+                 <Screen name='Cadastro' component={Cadastro} />
+                 <Screen name='EditarConta' component={EditarConta} />  
                 <Screen name='Home' component={HomeTabs} />
             </Navigator>
      

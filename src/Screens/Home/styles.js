@@ -7,7 +7,8 @@ const styles = StyleSheet.create({
 
     containerMainCard: {
         marginTop: 35
-    }
+    },
+   
 });
 
 export default styles; 
