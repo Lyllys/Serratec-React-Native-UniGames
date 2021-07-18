@@ -37,9 +37,9 @@ const Login = () => {
     api.post('/auth', usuario)
       .then(response => {
         AsyncStorage.setItem('token', response.data.token)
-        AsyncStorage.setItem('user', response.data.user)
-        AsyncStorage.setItem('idUsuario', response.data.idCliente)
-        AsyncStorage.setItem('nome', response.data.nome)
+        // AsyncStorage.setItem('user', response.data.user)
+        // AsyncStorage.setItem('idUsuario', response.data.idCliente)
+        // AsyncStorage.setItem('nome', response.data.nome)
         console.log(response.data)
         navigation.navigate('Home')
 

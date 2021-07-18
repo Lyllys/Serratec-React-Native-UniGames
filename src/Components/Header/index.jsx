@@ -17,7 +17,7 @@ const Header = ({aoClicar}) => {
             'https://m.extra.globo.com/incoming/24679567-0b3-ac6/w640h360-PROP/avatar-larissa-manoela-facebook-1.jpg'} />
             <View style={styles.containerTexto}>
                 <Text style={styles.textoSaudacao}>Bem-vinde de volta,</Text>
-                <Text style={styles.textoNome}>nome</Text>
+                <Text style={styles.textoNome}>Maria</Text>
             </View>
 
             </View>
